@@ -10,16 +10,16 @@ public class Latihan3 {
         Scanner input = new Scanner(System.in);
 
         for (int i = 0; i < operand.length; i++) {
-            System.out.print("Masukan Bilangan ke - " + i + " : ");
+            System.out.print("Masukan Bilangan ke - " + (i + 1) + " : ");
             operand[i] = input.nextInt();
         }
 
+        System.out.println("1. Tambah");
+        System.out.println("2. Kurang");
+        System.out.println("3. Bagi");
+        System.out.println("4. Kali");
+        System.out.println("5. Modulo");
         System.out.println("Pilih Tipe Operator ( pilih  1 - 5) : ");
-        System.out.print("1. Tambah");
-        System.out.print("2. Kurang");
-        System.out.print("3. Bagi");
-        System.out.print("4. Kali");
-        System.out.print("5. Modulo");
         typesOfOperator = input.nextInt();
 
         switch (typesOfOperator){
